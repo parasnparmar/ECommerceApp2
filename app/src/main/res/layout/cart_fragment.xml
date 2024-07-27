@@ -23,6 +23,14 @@
         android:layout_marginTop="20dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Total: $0.00"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnBuyNow"
@@ -31,6 +39,7 @@
         android:text="Buy Now"
         android:background="#EDDD4D"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         />
+
 </LinearLayout>

@@ -31,5 +31,8 @@ class CartFragment: Fragment() {
         cartAdapter = CartAdapter(cartItems)
         cartFragmentBinding.cartsRecyclerView.adapter = cartAdapter
         cartFragmentBinding.cartsRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
+        val totalPrice = cartItems.sumOf { it.price * it.quantity }
+        cartFragmentBinding.totalPriceTextView.text = "Total: $$totalPrice"
     }
 }
